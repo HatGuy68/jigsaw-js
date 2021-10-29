@@ -1,0 +1,14 @@
+{
+    "name": "WebCam Jigsaw Puzzle",
+    "short_name": "JigsawCam",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Web App",
+    "icons": [
+        {
+        "src": "./assets/cam.svg",
+        "sizes": "any"
+        }
+    ]
+}
