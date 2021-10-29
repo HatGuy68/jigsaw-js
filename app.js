@@ -1,7 +1,7 @@
 let VIDEO = null;
 let CANVAS = null;
 let CONTEXT = null;
-let SCALER = 0.6;
+let SCALER = 0.8;
 let SIZE = { x: 0, y: 0, width: 0, height: 0, rows: 3, columns: 3 };
 let PIECES = [];
 let SELECTED_PIECE = null;
@@ -226,10 +226,12 @@ function restart() {
 	randomizePieces();
 	document.getElementById("menuItems").style.display = "none";
 	document.getElementById("congrats").style.display = "none";
+	document.getElementById("time").style.display = "block";
 }
 
 function showComplete() {
 	document.getElementById("menuItems").style.display = "block";
+	document.getElementById("time").style.display = "none";
 	document.getElementById("congrats").style.display = "block";
 	document.getElementById("finalTime").innerHTML = formatTime(END_TIME - START_TIME);
 }
